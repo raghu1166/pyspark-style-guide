@@ -15,7 +15,7 @@ class ChainedDotFunctionsSyntaxChecker(checkers.BaseChecker):
     __implements__ = interfaces.IAstroidChecker
 
     name = 'chained-function-length'
-
+    E1085_message = " this is the duplicated message "
     msgs = {
         'E1085': (
             'Chained functions applied on a variable should not be more than 3.',
